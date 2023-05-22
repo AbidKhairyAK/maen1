@@ -1,0 +1,24 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "brand": "Mitsubishi",
+      "type": "Galant VR4"
+    },
+    {
+      "id": 2,
+      "brand": "Nissan",
+      "type": "Skyline GT-R"
+    },
+    {
+      "brand": "Mazda",
+      "type": "RX7",
+      "id": 3
+    },
+    {
+      "brand": "BMW",
+      "type": "M3",
+      "id": 4
+    }
+  ]
+}

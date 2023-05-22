@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Belajar Axios</title>
+</head>
+<body>
+	<button onclick="tambahData()">tambah data</button>
+
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script>
+		function tambahData () {
+			axios.post('http://localhost:3000/cars', {
+				brand: 'BMW',
+				type: 'M3'
+			})
+			.then(() => alert('Data Berhasil Ditambah'))
+			.catch(() => alert('Terjadi error'))
+		}
+	</script>
+
+	<!-- <script async type="module">
+		const res = await axios.get('http://localhost:3000/cars')
+
+		for (let car of res.data) {
+			document.write(car.brand + "<br>")
+		}
+	</script> -->
+</body>
+</html>
